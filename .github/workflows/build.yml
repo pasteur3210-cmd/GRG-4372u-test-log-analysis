@@ -1,0 +1,29 @@
+name: Build GRG4372 MP Analyzer
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install requirements
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt pyinstaller pytest
+      - name: Check syntax and unit tests
+        run: |
+          python -m compileall -q main.py analyzer.py legacy_audit.py xlsx_template_writer.py
+          python -m pytest -q tests
+      - name: Build Windows EXE
+        run: |
+          pyinstaller --noconfirm --clean --onefile --windowed --name GRG4372_MP_Analyzer --add-data "schema.json;." --add-data "rules.json;." --add-data "templates/GRG4372_MP_Approved_V2.6.1.xlsx;templates" main.py
+      - name: Publish EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: GRG4372_MP_Analyzer_V1.2.0
+          path: dist/GRG4372_MP_Analyzer.exe
