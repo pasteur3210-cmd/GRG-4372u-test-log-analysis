@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "source": "GRG-4372u 測試規格.pdf (5 pages) with V1.7 transcription",
+    "status": "PROVISIONAL: QA verification mandatory",
+    "scope": "DVT 40pcs + MP; MP BOB成品站采用2026-11-11确认的放行限值",
+    "station_scope": "BOB調試只記錄TX光功率監控；ER校準/調整不列入成品ER；Margin/Crossing/總抖動僅BOB測試"
+  },
+  "rf_rules": [
+    {
+      "id": "RF-001",
+      "band": "2G",
+      "mode": "11G",
+      "metric": "TX Power",
+      "low": 19,
+      "high": 22,
+      "mhz": 2442,
+      "rate": "54Mbps",
+      "source": "PDF p2 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-002",
+      "band": "2G",
+      "mode": "11G",
+      "metric": "Spectrum Mask",
+      "low": 0,
+      "high": 5,
+      "mhz": 2442,
+      "rate": "54Mbps",
+      "source": "PDF p2 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-003",
+      "band": "2G",
+      "mode": "11G",
+      "metric": "Frequency",
+      "low": -10,
+      "high": 10,
+      "mhz": 2442,
+      "rate": "54Mbps",
+      "source": "PDF p2 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-004",
+      "band": "2G",
+      "mode": "11G",
+      "metric": "EVM",
+      "low": null,
+      "high": -25,
+      "mhz": 2442,
+      "rate": "54Mbps",
+      "source": "PDF p2 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-005",
+      "band": "2G",
+      "mode": "11AX20",
+      "metric": "TX Power",
+      "low": 19.5,
+      "high": 22.5,
+      "mhz": 2442,
+      "rate": "MCS0",
+      "source": "PDF p2 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-006",
+      "band": "2G",
+      "mode": "11AX20",
+      "metric": "EVM",
+      "low": null,
+      "high": -5,
+      "mhz": 2442,
+      "rate": "MCS0",
+      "source": "PDF p2 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-007",
+      "band": "2G",
+      "mode": "11AX40",
+      "metric": "TX Power",
+      "low": 16.5,
+      "high": 19.5,
+      "mhz": 2422,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-008",
+      "band": "2G",
+      "mode": "11AX40",
+      "metric": "EVM",
+      "low": null,
+      "high": -35,
+      "mhz": 2422,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-009",
+      "band": "2G",
+      "mode": "11AX40",
+      "metric": "TX Power",
+      "low": 16.5,
+      "high": 19.5,
+      "mhz": 2462,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-010",
+      "band": "2G",
+      "mode": "11AX40",
+      "metric": "EVM",
+      "low": null,
+      "high": -35,
+      "mhz": 2462,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-011",
+      "band": "2G",
+      "mode": "11BE40",
+      "metric": "TX Power",
+      "low": 15.5,
+      "high": 18.5,
+      "mhz": 2442,
+      "rate": "MCS13",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-012",
+      "band": "2G",
+      "mode": "11BE40",
+      "metric": "EVM",
+      "low": null,
+      "high": -38,
+      "mhz": 2442,
+      "rate": "MCS13",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-013",
+      "band": "5G",
+      "mode": "11A",
+      "metric": "TX Power",
+      "low": 19,
+      "high": 22,
+      "mhz": 5180,
+      "rate": "54Mbps",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-014",
+      "band": "5G",
+      "mode": "11A",
+      "metric": "EVM",
+      "low": null,
+      "high": -25,
+      "mhz": 5180,
+      "rate": "54Mbps",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-015",
+      "band": "5G",
+      "mode": "11AX20",
+      "metric": "TX Power",
+      "low": 20,
+      "high": 23,
+      "mhz": 5180,
+      "rate": "MCS0",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-016",
+      "band": "5G",
+      "mode": "11AX20",
+      "metric": "EVM",
+      "low": null,
+      "high": -5,
+      "mhz": 5180,
+      "rate": "MCS0",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-017",
+      "band": "5G",
+      "mode": "11AX80",
+      "metric": "TX Power",
+      "low": 16.5,
+      "high": 19.5,
+      "mhz": 5210,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-018",
+      "band": "5G",
+      "mode": "11AX80",
+      "metric": "EVM",
+      "low": null,
+      "high": -35,
+      "mhz": 5210,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-019",
+      "band": "5G",
+      "mode": "11AX80",
+      "metric": "TX Power",
+      "low": 16.5,
+      "high": 19.5,
+      "mhz": 5290,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-020",
+      "band": "5G",
+      "mode": "11AX80",
+      "metric": "EVM",
+      "low": null,
+      "high": -35,
+      "mhz": 5290,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-021",
+      "band": "5G",
+      "mode": "11AX80",
+      "metric": "TX Power",
+      "low": 16.5,
+      "high": 19.5,
+      "mhz": 5690,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-022",
+      "band": "5G",
+      "mode": "11AX80",
+      "metric": "EVM",
+      "low": null,
+      "high": -35,
+      "mhz": 5690,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-023",
+      "band": "5G",
+      "mode": "11AX80",
+      "metric": "TX Power",
+      "low": 16.5,
+      "high": 19.5,
+      "mhz": 5775,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-024",
+      "band": "5G",
+      "mode": "11AX80",
+      "metric": "EVM",
+      "low": null,
+      "high": -35,
+      "mhz": 5775,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-025",
+      "band": "5G",
+      "mode": "11AX160",
+      "metric": "TX Power",
+      "low": 15,
+      "high": 18,
+      "mhz": 5250,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-026",
+      "band": "5G",
+      "mode": "11AX160",
+      "metric": "EVM",
+      "low": null,
+      "high": -35,
+      "mhz": 5250,
+      "rate": "MCS11",
+      "source": "PDF p3 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-027",
+      "band": "5G",
+      "mode": "11BE160",
+      "metric": "TX Power",
+      "low": 13.5,
+      "high": 16.5,
+      "mhz": 5570,
+      "rate": "MCS13",
+      "source": "PDF p4 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    },
+    {
+      "id": "RF-028",
+      "band": "5G",
+      "mode": "11BE160",
+      "metric": "EVM",
+      "low": null,
+      "high": -38,
+      "mhz": 5570,
+      "rate": "MCS13",
+      "source": "PDF p4 (V1.7 transcribed; QA review required)",
+      "status": "PROVISIONAL"
+    }
+  ],
+  "bob_rules": {
+    "發射實測光功率": {
+      "low": 2.3,
+      "high": 2.7,
+      "unit": "dBm",
+      "page": 5
+    },
+    "消光比 ER": {
+      "low": 12,
+      "high": 13,
+      "unit": "dB",
+      "page": 5
+    },
+    "眼圖 Crossing": {
+      "low": 45,
+      "high": 55,
+      "unit": "%",
+      "page": 5
+    },
+    "Eye Margin": {
+      "low": 30,
+      "high": null,
+      "unit": "%",
+      "page": 1
+    },
+    "總抖動": {
+      "low": null,
+      "high": 300,
+      "unit": "ps",
+      "page": 5,
+      "strict_high": true
+    },
+    "偏置電流": {
+      "low": null,
+      "high": 30,
+      "unit": "mA",
+      "page": 5,
+      "strict_high": true
+    },
+    "測試電流(MOD)": {
+      "low": null,
+      "high": 60,
+      "unit": "mA",
+      "page": 5,
+      "strict_high": true
+    }
+  },
+  "mp_bob_rules": {
+    "發射實測光功率": {
+      "low": 1.5,
+      "high": 3.5,
+      "unit": "dBm",
+      "page": 5,
+      "source": "MP更新規格 2026-11-11"
+    },
+    "消光比 ER": {
+      "low": 11.5,
+      "high": 13.5,
+      "unit": "dB",
+      "page": 5,
+      "source": "MP更新規格 2026-11-11"
+    },
+    "眼圖 Crossing": {
+      "low": 45,
+      "high": 55,
+      "unit": "%",
+      "page": 5
+    },
+    "Eye Margin": {
+      "low": 30,
+      "high": null,
+      "unit": "%",
+      "page": 1
+    },
+    "總抖動": {
+      "low": null,
+      "high": 300,
+      "unit": "ps",
+      "page": 5,
+      "strict_high": true
+    },
+    "偏置電流": {
+      "low": null,
+      "high": 30,
+      "unit": "mA",
+      "page": 5,
+      "strict_high": true
+    },
+    "測試電流(MOD)": {
+      "low": null,
+      "high": 60,
+      "unit": "mA",
+      "page": 5,
+      "strict_high": true
+    }
+  }
+}
